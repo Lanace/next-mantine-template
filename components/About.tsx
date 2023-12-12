@@ -12,7 +12,7 @@ const About = () => {
                 <div className="about-content">
 
                     <div style={{ marginBottom: 15 }}>
-                        <Text transform="uppercase" weight={500} color="yellow">
+                        <Text tt="uppercase" fw={500} c="yellow">
                             MADE WITH REACT AND MANTINE
                         </Text>
                     </div>
@@ -33,7 +33,7 @@ const About = () => {
 
                     <div className="buttons">
                         <Link to="section-one" smooth duration={500}>
-                            <Button color="yellow" rightIcon={<MdOutlineArrowDownward size={16} />} radius="lg" size="md">Tell me more</Button>
+                            <Button color="yellow" rightSection={<MdOutlineArrowDownward size={16} />} radius="lg" size="md">Tell me more</Button>
                         </Link>
 
                         <Button variant="default" radius="lg" size="md">Other stuff</Button>

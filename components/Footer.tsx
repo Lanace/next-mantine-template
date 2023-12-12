@@ -5,7 +5,6 @@ const Footer = () => {
     
     return (
         <footer style={{ backgroundColor: theme.colors.yellow[6]}}>
-
             <Container>
                 <Grid justify="space-around">
 
