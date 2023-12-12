@@ -1,9 +1,9 @@
-import About from "../Components/About";
-import SectionOne from '../Components/SectionOne';
-import SectionTwo from '../Components/SectionTwo';
-import SectionThree from '../Components/SectionThree';
-import SectionFour from '../Components/SectionFour';
-import SectionFive from '../Components/SectionFive';
+import About from "../../components/About";
+import SectionOne from '../../components/SectionOne';
+import SectionTwo from '../../components/SectionTwo';
+import SectionThree from '../../components/SectionThree';
+import SectionFour from '../../components/SectionFour';
+import SectionFive from '../../components/SectionFive';
 
 const Content = () => {
     return (

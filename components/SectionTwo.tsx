@@ -7,7 +7,11 @@ const SectionTwo = () => {
         <section id="section-two">
             <Container>
                 <Grid justify="space-around">
-                    <Grid.Col xs={6} sm={8} md={8} lg={8}>
+                    <Grid.Col span={{
+                        sm: 8,
+                        lg: 8,
+                        xs: 6
+                    }}>
                         <div style={{ marginBottom: 20 }}>
                             <Text color="black">
                                 <Title order={1}>You can put whatever you want here</Title>
@@ -17,7 +21,11 @@ const SectionTwo = () => {
                         </div>
                         <Button color="yellow">Check it out</Button>
                     </Grid.Col>
-                    <Grid.Col xs={6} sm={4} md={4} lg={4}>
+                    <Grid.Col span={{
+                        xs: 6,
+                        sm: 4,
+                        lg: 4,
+                    }}>
                         <Image src={require('../Images/lime-surfing.png')} alt={'sample1'} style={{ width: '100%' }} />
                     </Grid.Col>
                 </Grid>

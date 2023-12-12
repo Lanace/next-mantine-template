@@ -1,3 +1,5 @@
+import Content from "../src/Views/Content";
+
 export default function HomePage() {
-  return <div>Home page</div>;
+  return <Content />;
 }
