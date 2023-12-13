@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, Badge, Burger, Drawer, Code, Title, Anchor, Text } from '@mantine/core';
 import { UnstyledButton, Group, Avatar } from '@mantine/core';
 import React from 'react';
@@ -34,12 +36,16 @@ const Header = () => {
                 </div>
 
                 <Drawer
-                    transition="rotate-right"
-                    transitionDuration={250}
-                    transitionTimingFunction="ease"
-                    overlayOpacity={0.55}
+                    transitionProps={{
+                        transition: "rotate-right",
+                        duration: 250,
+                        timingFunction: "ease"
+                    }}
+                    opacity={0.55}
                     position="right"
-                    closeButtonLabel="Close drawer"
+                    closeButtonProps={{
+                        value: "Close drawer"
+                    }}
                     title="Menu"
                     padding="xl"
                     opened={opened}

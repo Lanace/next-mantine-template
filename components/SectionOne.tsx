@@ -1,6 +1,6 @@
 import { Carousel } from '@mantine/carousel';
 import { Text, Container, useMantineTheme, Title } from '@mantine/core';
-import '../Styles/SectionOne.scss';
+import '@/assets/styles/SectionOne.scss';
 
 const SectionOne = () => {
     const theme = useMantineTheme();
@@ -19,23 +19,23 @@ const SectionOne = () => {
     return (
         <section id="section-one">
             <Container>
-                <Text color="black" align="center" mb="15px">
+                <Text color="black" ta="center" mb="15px">
                     <Title order={1}>Explain something in this carousel</Title>
                 </Text>
 
-                <Text color="black" align="center" mb="25px">
+                <Text color="black" ta="center" mb="25px">
                     You can insert images or some texts if you need.
                 </Text>
 
                 <Carousel
                     withIndicators
                     height={300}
-                    slideSize="33.333333%"
                     slideGap="md"
-                    breakpoints={[
-                        { maxWidth: 'md', slideSize: '50%' },
-                        { maxWidth: 'sm', slideSize: '100%', slideGap: 15 },
-                    ]}
+                    slideSize={{
+                        base: "33.333333%",
+                        md: "50%",
+                        sm: "100%"
+                    }}
                     loop
                     align="start"
                     pr="10px"

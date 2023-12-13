@@ -6,19 +6,24 @@ const SectionFour = () => {
     return (
         <section id="section-four">
             <Container>
-                <Text color="black" align="center">
+                <Text color="black" ta="center">
                     <Title order={1} mb="30px">These cards are really nice</Title>
                 </Text>
 
                 <Grid>
-                    <Grid.Col xs={12} sm={4} md={4} lg={4}>
+                    <Grid.Col span={{
+                        xs: 12,
+                        sm: 4,
+                        md: 4,
+                        lg: 4,
+                    }}>
                         <Card shadow="sm" p="lg" style={{ height: '100%'}}>
                             <Card.Section>
-                                <Image src={require('../Images/lime-welcome.png')} alt={'sample1'} />
+                                <Image src={"/images/lime-welcome.png"} alt={'sample1'} />
                             </Card.Section>
 
-                            <Group position="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
-                                <Text weight={500}>History of Dennis Farina</Text>
+                            <Group p="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
+                                <Text w={500}>History of Dennis Farina</Text>
                                 <Badge color="yellow" variant="light">
                                     Cool badge
                                 </Badge>
@@ -34,14 +39,19 @@ const SectionFour = () => {
                         </Card>
                     </Grid.Col>
 
-                    <Grid.Col xs={12} sm={4} md={4} lg={4}>
+                    <Grid.Col span={{
+                        sx: 12,
+                        sm: 4,
+                        md: 4,
+                        lg: 4,
+                    }}>
                         <Card shadow="sm" p="lg" style={{ height: '100%' }}>
                             <Card.Section>
-                                <Image src={require('../Images/lime-canoeing.png')} alt={'sample1'} />
+                                <Image src="/images/lime-canoeing.png" alt={'sample1'} />
                             </Card.Section>
 
-                            <Group position="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
-                                <Text weight={500}>Career of Dennis Farina</Text>
+                            <Group p="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
+                                <Text w={500}>Career of Dennis Farina</Text>
                                 <Badge color="yellow" variant="light">
                                     Cool badge 2
                                 </Badge>
@@ -57,14 +67,18 @@ const SectionFour = () => {
                         </Card>
                     </Grid.Col>
 
-                    <Grid.Col xs={12} sm={4} md={4} lg={4}>
+                    <Grid.Col span={
+                        {xs: 12,
+                            sm: 4,
+                            md: 4,
+                            lg: 4,}}>
                         <Card shadow="sm" p="lg" style={{ height: '100%' }}>
                             <Card.Section>
-                                <Image src={require('../Images/lime-message-sent.png')} alt={'sample1'} />
+                                <Image src="/images/lime-message-sent.png" alt={'sample1'} />
                             </Card.Section>
 
-                            <Group position="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
-                                <Text weight={500}>Major roles of Dennis Farina</Text>
+                            <Group p="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
+                                <Text w={500}>Major roles of Dennis Farina</Text>
                                 <Badge color="yellow" variant="light">
                                     Cool badge 3
                                 </Badge>
