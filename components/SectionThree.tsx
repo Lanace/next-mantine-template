@@ -13,7 +13,7 @@ const SectionThree = () => {
                         md: 4,
                         lg: 4
                     }}>
-                        <Image src={require('../Images/lime-bicycle-riding.png')} alt={'sample2'} style={{ width: '100%' }} />
+                        <Image src="/images/lime-bicycle-riding.png" alt={'sample2'} style={{ width: '100%' }} />
                     </Grid.Col>
                     <Grid.Col span={{
                         xs: 6,

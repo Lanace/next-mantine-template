@@ -1,3 +1,5 @@
+"use client";
+
 import { useMantineTheme, Container, Grid, Text, Button, Group, Avatar, UnstyledButton, Anchor, Code } from '@mantine/core';
 
 const Footer = () => {

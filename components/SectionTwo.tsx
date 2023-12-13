@@ -13,7 +13,7 @@ const SectionTwo = () => {
                         xs: 6
                     }}>
                         <div style={{ marginBottom: 20 }}>
-                            <Text color="black">
+                            <Text c="black">
                                 <Title order={1}>You can put whatever you want here</Title>
                                 Dennis Farina was one of Hollywood's busiest actors and a familiar face to moviegoers and television viewers alike.
                                 In 1998's "Saving Private Ryan," directed by Steven Spielberg, Farina played "Col. Anderson," a pivotal role in the film.
@@ -26,7 +26,7 @@ const SectionTwo = () => {
                         sm: 4,
                         lg: 4,
                     }}>
-                        <Image src={require('../Images/lime-surfing.png')} alt={'sample1'} style={{ width: '100%' }} />
+                        <Image src="/images/lime-surfing.png" alt={'sample1'} style={{ width: '100%' }} />
                     </Grid.Col>
                 </Grid>
             </Container>

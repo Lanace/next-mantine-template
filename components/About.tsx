@@ -1,9 +1,11 @@
-import { Text, Container, Anchor, MediaQuery, Button } from '@mantine/core';
+import { Text, Container, Anchor, Button, Box } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import { MdOutlineArrowDownward } from "react-icons/md";
 import { Link } from 'react-scroll';
 
 const About = () => {
     //const theme = useMantineTheme();
+    const matches = useMediaQuery('(max-width: 768px)');
 
     return (
         <section id="about">
@@ -19,9 +21,9 @@ const About = () => {
 
                     <div style={{ marginBottom: 15 }}>
                         <Text>
-                            <MediaQuery query="(max-width: 768px)" styles={{ fontSize: '2.8rem !important' }}>
+                            <Box style={matches ? { fontSize: '2.8rem !important' } : undefined}>
                                 <h1 className="title">Simple Mantine Template</h1>
-                            </MediaQuery>
+                            </Box>
                         </Text>
                     </div>
 

@@ -19,7 +19,7 @@ const SectionFour = () => {
                     }}>
                         <Card shadow="sm" p="lg" style={{ height: '100%'}}>
                             <Card.Section>
-                                <Image src={require('../Images/lime-welcome.png')} alt={'sample1'} />
+                                <Image src={"/images/lime-welcome.png"} alt={'sample1'} />
                             </Card.Section>
 
                             <Group p="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
@@ -47,7 +47,7 @@ const SectionFour = () => {
                     }}>
                         <Card shadow="sm" p="lg" style={{ height: '100%' }}>
                             <Card.Section>
-                                <Image src={require('../Images/lime-canoeing.png')} alt={'sample1'} />
+                                <Image src="/images/lime-canoeing.png" alt={'sample1'} />
                             </Card.Section>
 
                             <Group p="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
@@ -74,7 +74,7 @@ const SectionFour = () => {
                             lg: 4,}}>
                         <Card shadow="sm" p="lg" style={{ height: '100%' }}>
                             <Card.Section>
-                                <Image src={require('../Images/lime-message-sent.png')} alt={'sample1'} />
+                                <Image src="/images/lime-message-sent.png" alt={'sample1'} />
                             </Card.Section>
 
                             <Group p="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>

@@ -1,9 +1,11 @@
-import "@mantine/core/styles.css";
 import React from "react";
-import { MantineProvider, ColorSchemeScript, TypographyStylesProvider } from "@mantine/core";
-import { theme } from "../theme";
+import { ColorSchemeScript } from "@mantine/core";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Providers from "../components/Providers";
+
+import "@mantine/core/styles.css";
+import "../assets/styles/index.scss";
 
 export const metadata = {
   title: "Mantine Next.js template",
@@ -30,7 +32,8 @@ export default function RootLayout({ children }: { children: any }) {
         <meta property="og:title" content="Simple Mantine Template" />
         <meta property="og:description" content="Simple Mantine template made with React and Mantine." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mantinetemplate.netlify.app/" />
+        {/* TODO: 내 주소로 변경 */}
+        {/* <meta property="og:url" content="https://mantinetemplate.netlify.app/" /> */}
         <meta property="og:image" content="sample.png" />
 
         {/* <!-- Custom Fonts --> */}
@@ -41,13 +44,11 @@ export default function RootLayout({ children }: { children: any }) {
         <link rel="icon" href="/favicon.svg" />
       </head>
       <body>
-        <MantineProvider theme={theme}>
-          <TypographyStylesProvider>
-            <Header />
-            {children}
-            <Footer />
-          </TypographyStylesProvider>
-        </MantineProvider>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

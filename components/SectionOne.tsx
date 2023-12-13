@@ -1,6 +1,6 @@
 import { Carousel } from '@mantine/carousel';
 import { Text, Container, useMantineTheme, Title } from '@mantine/core';
-import '../Styles/SectionOne.scss';
+import '@/assets/styles/SectionOne.scss';
 
 const SectionOne = () => {
     const theme = useMantineTheme();

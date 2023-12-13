@@ -44,6 +44,7 @@
     "postcss-preset-mantine": "1.11.1",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.1.1",
+    "sass": "^1.69.5",
     "typescript": "5.2.2"
   },
   "packageManager": "yarn@4.0.1"

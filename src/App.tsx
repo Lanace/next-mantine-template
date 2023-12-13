@@ -1,4 +1,4 @@
-import Content from './Views/Content';
+import Content from '../components/Content';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { MantineProvider } from '@mantine/core';

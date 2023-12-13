@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, Badge, Burger, Drawer, Code, Title, Anchor, Text } from '@mantine/core';
 import { UnstyledButton, Group, Avatar } from '@mantine/core';
 import React from 'react';
