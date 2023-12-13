@@ -42,10 +42,10 @@ const Footer = () => {
                             <Anchor href="https://github.com/Lanace">
                                 <UnstyledButton>
                                     <Group>
-                                        <Avatar size={40} color="orange">GDC</Avatar>
+                                        <Avatar size={40} color="orange">JIJ</Avatar>
                                         <div>
                                             <Text>Lanace</Text>
-                                            <Text size="xs" color="dimmed">giuseppe.delcampo@outlook.com</Text>
+                                            <Text size="xs" color="dimmed">lanace93@gmail.com</Text>
                                         </div>
                                     </Group>
                                 </UnstyledButton>
